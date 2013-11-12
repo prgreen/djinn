@@ -1,0 +1,32 @@
+For the build to work you need to have in your path:
+
+ragel
+
+lemon
+
+premake4
+
+See dependencies.txt for more details on how to obtain them.
+
+
+Then you run (for linux and mingw):
+
+premake4 gmake
+make                           (or mingw32-make or mingw64-make)
+
+
+You may also generate visual C++ project files, see premake4 documentation. 
+
+Default is "debug" mode, for "release" configuration:
+
+make config="release"          (or mingw32-make or mingw64-make)
+
+
+
+TESTED TO WORK ON THE FOLLOWING PLATFORMS:
+
+64 bits linux (debian)
+64 bits windows seven
+
+Warnings for unused variables are a known issue with lemon default template
+and may be fixed in the future.  

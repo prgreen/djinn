@@ -1,0 +1,22 @@
+
+NOT INCLUDED (must be compiled/installed in PATH)
+
+ragel   (lexer)               http://www.complang.org/ragel/
+
+lemon   (parser generator)    http://www.hwaci.com/sw/lemon/
+
+premake4 (build system)       http://industriousone.com/premake
+
+
+libuv  (links with libuv.a)   https://github.com/joyent/libuv
+
+
+ALREADY INCLUDED
+
+hash table library adapted from https://github.com/skeeto/hashtab
+
+hash function used (superfasthash) is Paul Hsieh's
+
+c template library (text templates)   http://libctemplate.sourceforge.net/doc.html
+
+coroutine library is renamed "picoro" from Tony Finch, see details in coro.h

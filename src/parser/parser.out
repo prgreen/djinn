@@ -1,0 +1,432 @@
+State 0:
+          program ::= * expr
+          program ::= * IDENTIFIER EQUAL expr
+      (2) program ::= *
+          expr ::= * OPENP expr CLOSEP
+          expr ::= * expr POWER expr
+          expr ::= * expr MODULO expr
+          expr ::= * expr PLUS expr
+          expr ::= * expr DIVIDE expr
+          expr ::= * expr TIMES expr
+          expr ::= * expr MINUS expr
+          expr ::= * MINUS expr
+          expr ::= * PLUS expr
+          expr ::= * DOUBLE
+          expr ::= * IDENTIFIER
+
+                             $ reduce 2
+                          PLUS shift  2
+                         MINUS shift  3
+                    IDENTIFIER shift  18
+                         OPENP shift  9
+                        DOUBLE shift  24
+                          expr shift  13
+                       program accept
+
+State 1:
+          program ::= IDENTIFIER EQUAL * expr
+          expr ::= * OPENP expr CLOSEP
+          expr ::= * expr POWER expr
+          expr ::= * expr MODULO expr
+          expr ::= * expr PLUS expr
+          expr ::= * expr DIVIDE expr
+          expr ::= * expr TIMES expr
+          expr ::= * expr MINUS expr
+          expr ::= * MINUS expr
+          expr ::= * PLUS expr
+          expr ::= * DOUBLE
+          expr ::= * IDENTIFIER
+
+                          PLUS shift  2
+                         MINUS shift  3
+                    IDENTIFIER shift  23
+                         OPENP shift  9
+                        DOUBLE shift  24
+                          expr shift  11
+
+State 2:
+          expr ::= * OPENP expr CLOSEP
+          expr ::= * expr POWER expr
+          expr ::= * expr MODULO expr
+          expr ::= * expr PLUS expr
+          expr ::= * expr DIVIDE expr
+          expr ::= * expr TIMES expr
+          expr ::= * expr MINUS expr
+          expr ::= * MINUS expr
+          expr ::= * PLUS expr
+          expr ::= PLUS * expr
+          expr ::= * DOUBLE
+          expr ::= * IDENTIFIER
+
+                          PLUS shift  2
+                         MINUS shift  3
+                    IDENTIFIER shift  23
+                         OPENP shift  9
+                        DOUBLE shift  24
+                          expr shift  14
+
+State 3:
+          expr ::= * OPENP expr CLOSEP
+          expr ::= * expr POWER expr
+          expr ::= * expr MODULO expr
+          expr ::= * expr PLUS expr
+          expr ::= * expr DIVIDE expr
+          expr ::= * expr TIMES expr
+          expr ::= * expr MINUS expr
+          expr ::= * MINUS expr
+          expr ::= MINUS * expr
+          expr ::= * PLUS expr
+          expr ::= * DOUBLE
+          expr ::= * IDENTIFIER
+
+                          PLUS shift  2
+                         MINUS shift  3
+                    IDENTIFIER shift  23
+                         OPENP shift  9
+                        DOUBLE shift  24
+                          expr shift  15
+
+State 4:
+          expr ::= * OPENP expr CLOSEP
+          expr ::= * expr POWER expr
+          expr ::= * expr MODULO expr
+          expr ::= * expr PLUS expr
+          expr ::= * expr DIVIDE expr
+          expr ::= * expr TIMES expr
+          expr ::= * expr MINUS expr
+          expr ::= expr MINUS * expr
+          expr ::= * MINUS expr
+          expr ::= * PLUS expr
+          expr ::= * DOUBLE
+          expr ::= * IDENTIFIER
+
+                          PLUS shift  2
+                         MINUS shift  3
+                    IDENTIFIER shift  23
+                         OPENP shift  9
+                        DOUBLE shift  24
+                          expr shift  16
+
+State 5:
+          expr ::= * OPENP expr CLOSEP
+          expr ::= * expr POWER expr
+          expr ::= * expr MODULO expr
+          expr ::= * expr PLUS expr
+          expr ::= * expr DIVIDE expr
+          expr ::= * expr TIMES expr
+          expr ::= expr TIMES * expr
+          expr ::= * expr MINUS expr
+          expr ::= * MINUS expr
+          expr ::= * PLUS expr
+          expr ::= * DOUBLE
+          expr ::= * IDENTIFIER
+
+                          PLUS shift  2
+                         MINUS shift  3
+                    IDENTIFIER shift  23
+                         OPENP shift  9
+                        DOUBLE shift  24
+                          expr shift  19
+
+State 6:
+          expr ::= * OPENP expr CLOSEP
+          expr ::= * expr POWER expr
+          expr ::= * expr MODULO expr
+          expr ::= * expr PLUS expr
+          expr ::= * expr DIVIDE expr
+          expr ::= expr DIVIDE * expr
+          expr ::= * expr TIMES expr
+          expr ::= * expr MINUS expr
+          expr ::= * MINUS expr
+          expr ::= * PLUS expr
+          expr ::= * DOUBLE
+          expr ::= * IDENTIFIER
+
+                          PLUS shift  2
+                         MINUS shift  3
+                    IDENTIFIER shift  23
+                         OPENP shift  9
+                        DOUBLE shift  24
+                          expr shift  20
+
+State 7:
+          expr ::= * OPENP expr CLOSEP
+          expr ::= * expr POWER expr
+          expr ::= * expr MODULO expr
+          expr ::= * expr PLUS expr
+          expr ::= expr PLUS * expr
+          expr ::= * expr DIVIDE expr
+          expr ::= * expr TIMES expr
+          expr ::= * expr MINUS expr
+          expr ::= * MINUS expr
+          expr ::= * PLUS expr
+          expr ::= * DOUBLE
+          expr ::= * IDENTIFIER
+
+                          PLUS shift  2
+                         MINUS shift  3
+                    IDENTIFIER shift  23
+                         OPENP shift  9
+                        DOUBLE shift  24
+                          expr shift  17
+
+State 8:
+          expr ::= * OPENP expr CLOSEP
+          expr ::= * expr POWER expr
+          expr ::= * expr MODULO expr
+          expr ::= expr MODULO * expr
+          expr ::= * expr PLUS expr
+          expr ::= * expr DIVIDE expr
+          expr ::= * expr TIMES expr
+          expr ::= * expr MINUS expr
+          expr ::= * MINUS expr
+          expr ::= * PLUS expr
+          expr ::= * DOUBLE
+          expr ::= * IDENTIFIER
+
+                          PLUS shift  2
+                         MINUS shift  3
+                    IDENTIFIER shift  23
+                         OPENP shift  9
+                        DOUBLE shift  24
+                          expr shift  21
+
+State 9:
+          expr ::= * OPENP expr CLOSEP
+          expr ::= OPENP * expr CLOSEP
+          expr ::= * expr POWER expr
+          expr ::= * expr MODULO expr
+          expr ::= * expr PLUS expr
+          expr ::= * expr DIVIDE expr
+          expr ::= * expr TIMES expr
+          expr ::= * expr MINUS expr
+          expr ::= * MINUS expr
+          expr ::= * PLUS expr
+          expr ::= * DOUBLE
+          expr ::= * IDENTIFIER
+
+                          PLUS shift  2
+                         MINUS shift  3
+                    IDENTIFIER shift  23
+                         OPENP shift  9
+                        DOUBLE shift  24
+                          expr shift  12
+
+State 10:
+          expr ::= * OPENP expr CLOSEP
+          expr ::= * expr POWER expr
+          expr ::= expr POWER * expr
+          expr ::= * expr MODULO expr
+          expr ::= * expr PLUS expr
+          expr ::= * expr DIVIDE expr
+          expr ::= * expr TIMES expr
+          expr ::= * expr MINUS expr
+          expr ::= * MINUS expr
+          expr ::= * PLUS expr
+          expr ::= * DOUBLE
+          expr ::= * IDENTIFIER
+
+                          PLUS shift  2
+                         MINUS shift  3
+                    IDENTIFIER shift  23
+                         OPENP shift  9
+                        DOUBLE shift  24
+                          expr shift  22
+
+State 11:
+      (1) program ::= IDENTIFIER EQUAL expr *
+          expr ::= expr * POWER expr
+          expr ::= expr * MODULO expr
+          expr ::= expr * PLUS expr
+          expr ::= expr * DIVIDE expr
+          expr ::= expr * TIMES expr
+          expr ::= expr * MINUS expr
+
+                             $ reduce 1
+                          PLUS shift  7
+                         MINUS shift  4
+                        DIVIDE shift  6
+                         TIMES shift  5
+                        MODULO shift  8
+                         POWER shift  10
+
+State 12:
+          expr ::= OPENP expr * CLOSEP
+          expr ::= expr * POWER expr
+          expr ::= expr * MODULO expr
+          expr ::= expr * PLUS expr
+          expr ::= expr * DIVIDE expr
+          expr ::= expr * TIMES expr
+          expr ::= expr * MINUS expr
+
+                          PLUS shift  7
+                         MINUS shift  4
+                        DIVIDE shift  6
+                         TIMES shift  5
+                        MODULO shift  8
+                         POWER shift  10
+                        CLOSEP shift  25
+
+State 13:
+      (0) program ::= expr *
+          expr ::= expr * POWER expr
+          expr ::= expr * MODULO expr
+          expr ::= expr * PLUS expr
+          expr ::= expr * DIVIDE expr
+          expr ::= expr * TIMES expr
+          expr ::= expr * MINUS expr
+
+                             $ reduce 0
+                          PLUS shift  7
+                         MINUS shift  4
+                        DIVIDE shift  6
+                         TIMES shift  5
+                        MODULO shift  8
+                         POWER shift  10
+
+State 14:
+          expr ::= expr * POWER expr
+          expr ::= expr * MODULO expr
+          expr ::= expr * PLUS expr
+          expr ::= expr * DIVIDE expr
+          expr ::= expr * TIMES expr
+          expr ::= expr * MINUS expr
+     (11) expr ::= PLUS expr *
+
+                        DIVIDE shift  6
+                         TIMES shift  5
+                        MODULO shift  8
+                         POWER shift  10
+                     {default} reduce 11
+
+State 15:
+          expr ::= expr * POWER expr
+          expr ::= expr * MODULO expr
+          expr ::= expr * PLUS expr
+          expr ::= expr * DIVIDE expr
+          expr ::= expr * TIMES expr
+          expr ::= expr * MINUS expr
+     (10) expr ::= MINUS expr *
+
+                        DIVIDE shift  6
+                         TIMES shift  5
+                        MODULO shift  8
+                         POWER shift  10
+                     {default} reduce 10
+
+State 16:
+          expr ::= expr * POWER expr
+          expr ::= expr * MODULO expr
+          expr ::= expr * PLUS expr
+          expr ::= expr * DIVIDE expr
+          expr ::= expr * TIMES expr
+          expr ::= expr * MINUS expr
+      (9) expr ::= expr MINUS expr *
+
+                        DIVIDE shift  6
+                         TIMES shift  5
+                        MODULO shift  8
+                         POWER shift  10
+                     {default} reduce 9
+
+State 17:
+          expr ::= expr * POWER expr
+          expr ::= expr * MODULO expr
+          expr ::= expr * PLUS expr
+      (6) expr ::= expr PLUS expr *
+          expr ::= expr * DIVIDE expr
+          expr ::= expr * TIMES expr
+          expr ::= expr * MINUS expr
+
+                        DIVIDE shift  6
+                         TIMES shift  5
+                        MODULO shift  8
+                         POWER shift  10
+                     {default} reduce 6
+
+State 18:
+          program ::= IDENTIFIER * EQUAL expr
+     (13) expr ::= IDENTIFIER *
+
+                         EQUAL shift  1
+                     {default} reduce 13
+
+State 19:
+          expr ::= expr * POWER expr
+          expr ::= expr * MODULO expr
+          expr ::= expr * PLUS expr
+          expr ::= expr * DIVIDE expr
+          expr ::= expr * TIMES expr
+      (8) expr ::= expr TIMES expr *
+          expr ::= expr * MINUS expr
+
+                         POWER shift  10
+                     {default} reduce 8
+
+State 20:
+          expr ::= expr * POWER expr
+          expr ::= expr * MODULO expr
+          expr ::= expr * PLUS expr
+          expr ::= expr * DIVIDE expr
+      (7) expr ::= expr DIVIDE expr *
+          expr ::= expr * TIMES expr
+          expr ::= expr * MINUS expr
+
+                         POWER shift  10
+                     {default} reduce 7
+
+State 21:
+          expr ::= expr * POWER expr
+          expr ::= expr * MODULO expr
+      (5) expr ::= expr MODULO expr *
+          expr ::= expr * PLUS expr
+          expr ::= expr * DIVIDE expr
+          expr ::= expr * TIMES expr
+          expr ::= expr * MINUS expr
+
+                         POWER shift  10
+                     {default} reduce 5
+
+State 22:
+          expr ::= expr * POWER expr
+      (4) expr ::= expr POWER expr *
+          expr ::= expr * MODULO expr
+          expr ::= expr * PLUS expr
+          expr ::= expr * DIVIDE expr
+          expr ::= expr * TIMES expr
+          expr ::= expr * MINUS expr
+
+                     {default} reduce 4
+
+State 23:
+     (13) expr ::= IDENTIFIER *
+
+                     {default} reduce 13
+
+State 24:
+     (12) expr ::= DOUBLE *
+
+                     {default} reduce 12
+
+State 25:
+      (3) expr ::= OPENP expr CLOSEP *
+
+                     {default} reduce 3
+
+----------------------------------------------------
+Symbols:
+    0: $:
+    1: PLUS
+    2: MINUS
+    3: DIVIDE
+    4: TIMES
+    5: MODULO
+    6: POWER
+    7: IDENTIFIER
+    8: EQUAL
+    9: OPENP
+   10: CLOSEP
+   11: DOUBLE
+   12: error:
+   13: expr: PLUS MINUS IDENTIFIER OPENP DOUBLE
+   14: program: <lambda> PLUS MINUS IDENTIFIER OPENP DOUBLE

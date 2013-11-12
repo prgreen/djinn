@@ -1,0 +1,11 @@
+#define PLUS                            1
+#define MINUS                           2
+#define DIVIDE                          3
+#define TIMES                           4
+#define MODULO                          5
+#define POWER                           6
+#define IDENTIFIER                      7
+#define EQUAL                           8
+#define OPENP                           9
+#define CLOSEP                         10
+#define DOUBLE                         11

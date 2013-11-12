@@ -1,0 +1,11 @@
+data/include/utils/superfasthash.h.i
+data/include/utils/strht.h.i
+data/src/utils/superfasthash.c.i
+data/src/utils/hashtab.c.i
+data/src/parser/parser.y.i
+data/src/parser/lempar.c.i
+data/premake4.lua.i
+data/test/test.dj.i
+data/include/utils/hashtab.h.i
+data/src/lexer/lexer.rl.i
+data/include/pstdint.h.i
